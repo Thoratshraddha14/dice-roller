@@ -43,7 +43,36 @@
         <div>
             <button class="btn" onclick="diceRoller()">Roll</button>
         </div>
-
     </div>
+     <script>
+        function diceRoller(){
+            const min=1;
+            const max=6;
+            const diceElement=document.getElementById("dice");
+            const random =Math.floor(Math.random()*(max-min+1))+min;
+            
+            switch(random){
+            case 1:
+                diceElement.src="./image/one.png"
+                break;
+            case 2:
+                diceElement.src="./image/two.png"
+                break;
+            case 3:
+                diceElement.src="./image/three.png"
+                break;
+            case 4:
+                diceElement.src="./image/four.png"
+                break;
+            case 5:
+                diceElement.src="./image/five.png"
+                break;
+            case 6:
+                diceElement.src="./image/six.png"
+                break;
+            
+        }
+        }
+    </script>
 </body>
 </html>
